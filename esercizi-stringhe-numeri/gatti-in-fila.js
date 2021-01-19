@@ -18,13 +18,18 @@
   http://www.imparareaprogrammare.it
 */
 
-let cats;
-let catsPerRows;
+let cats = 44;
+let catsPerRows = 6;
 
 let rows = cats / catsPerRows;
-let missing = cats % catsPerRows;
+let resto = cats % catsPerRows;
 
-rows = Math.ceil(rows - 1);
+rows = Math.ceil(rows);
+
+let missing = catsPerRows - resto;
 
 console.log(rows);
-console.log(missing);
+console.log('Mancano '+ missing + ' gatti per avere ' + rows + ' file complete da ' + catsPerRows + ' gatti ciascuna.'); 
+
+//variante scritta in template litteral
+console.log(`Mancano ${missing} gatti per avere ${rows} file complete da ${catsPerRows} gatti ciascuna.`);
