@@ -17,3 +17,14 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let cats;
+let catsPerRows;
+
+let rows = cats / catsPerRows;
+let missing = cats % catsPerRows;
+
+rows = Math.ceil(rows - 1);
+
+console.log(rows);
+console.log(missing);
